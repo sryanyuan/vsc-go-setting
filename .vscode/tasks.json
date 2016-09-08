@@ -18,14 +18,42 @@
             "args": [
                 "${workspaceRoot}",
                 "${fileDirname}"
-            ]
+            ],
+            "isWatching": false,
+            "problemMatcher": {
+                "owner": "go",
+                "fileLocation": [
+                    "relative",
+                    "${fileDirname}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):\\s+(.*)$",
+                    "file":1,
+                    "line": 2,
+                    "message": 3
+                }
+            }
         },
         {
             "taskName": "vscgo_install",
             "args": [
                 "${workspaceRoot}",
                 "${fileDirname}"
-            ]
+            ],
+            "isWatching": false,
+            "problemMatcher": {
+                "owner": "go",
+                "fileLocation": [
+                    "relative",
+                    "${fileDirname}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):\\s+(.*)$",
+                    "file":1,
+                    "line": 2,
+                    "message": 3
+                }
+            }
         }
     ]
 }
